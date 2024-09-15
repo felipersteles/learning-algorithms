@@ -1,0 +1,58 @@
+.surfing{
+    background-color: #3c7489;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wave {
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://i.ibb.co/jy2qnhj/hokusai.png");
+    background-position: center;
+    background-position: 0;
+    animation: 20s surf linear infinite;
+}
+
+@keyframes surf {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 100vw;
+    }
+}
+
+.surfer {
+    height: 200px;
+    width: 200px;
+    margin-top: -100px;
+    animation: 3s dj ease-in-out infinite;
+}
+
+@keyframes dj {
+    0% {
+        transform: translateX(-50vw); /* Start off-screen to the left */
+    }
+    10% {
+        transform: translateX(-10vw); /* Start off-screen to the left */
+    }
+    25% {
+        transform: translateX(0); /* Move to the starting position */
+    }
+    75% {
+        transform: translateX(10vw); /* Move to the right edge of the viewport */
+    }
+    85% {
+        transform: translateX(20vw); /* Move to the right edge of the viewport */
+    }
+    100% {
+        transform: translateX(60vw); /* Move off-screen to the right */
+    }
+}

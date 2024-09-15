@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #3c7489;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header h3 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header li {
+    margin: 0 15px;
+}
+
+header li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header li a:hover {
+    text-decoration: underline;
+}
+
+header .teles {
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    cursor: pointer;
+}
+
+header .teles:hover {
+    font-size: medium;
+    cursor: pointer;
+    color: #ccb77f;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.references {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px auto 0;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.references h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.references ul {
+    list-style-type: none;
+    /* Removes default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.references li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.references a {
+    color: #007bff;
+    /* Bootstrap blue */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.references a:hover {
+    color: #0056b3;
+    /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+.references a+a {
+    display: block;
+    /* Stack the links */
+    margin-top: 5px;
+    /* Space between links */
+}
+
+footer {
+    background-color: #3c7489;
+    /* Dark background for contrast */
+    color: #ecf0f1;
+    /* Light text color for readability */
+    padding: 20px;
+    /* Space around the content */
+    text-align: center;
+    /* Center the text */
+    position: relative;
+    /* Ensure footer is placed at the bottom */
+    bottom: 0;
+    width: 100%;
+    /* Full width to cover the viewport */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow on top */
+}
+
+footer .copyright {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 0.9em;
+    /* Slightly smaller font size */
+}
+
+footer a {
+    color: #ccb77f;
+    /* Bright link color */
+    text-decoration: none;
+    /* Remove underline from links */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}

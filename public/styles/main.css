@@ -1,0 +1,235 @@
+
+.secret {
+    display: none;
+}
+
+.question:hover .secret {
+    display: block;
+}
+
+.apresentation {
+    padding: 20px;
+    margin: 0 auto 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.apresentation .question {
+    flex: 1;
+    cursor: crosshair;
+}
+
+.apresentation .question h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.apresentation p {
+    flex: 1;
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    /* Elegant serif font */
+}
+
+.history {
+    background-color: #f4f4f4;
+    /* Light background color for contrast */
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    text-align: center;
+    /* Center text and image */
+}
+
+.history h1 {
+    color: #333;
+    /* Dark blue-gray color for the heading */
+    font-size: 2.5em;
+    /* Larger font size for prominence */
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    /* Elegant serif font */
+}
+
+.history .image-container {
+    margin-bottom: 20px;
+}
+
+.history img {
+    max-width: 30vw;
+    /* Responsive image */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 8px;
+    /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Shadow for the image */
+}
+
+.history span {
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+    /* Gray color for the image credit */
+    margin-top: 10px;
+}
+
+.history a {
+    color: #3498db;
+    /* Link color */
+    text-decoration: none;
+    /* Remove underline from links */
+}
+
+.history a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+.history p {
+    color: #333;
+    /* Dark gray text color for readability */
+    font-size: 1.1em;
+    /* Slightly larger text size */
+    line-height: 1.6;
+    /* Improved line spacing */
+    font-family: 'Arial', sans-serif;
+    /* Clean sans-serif font */
+    text-align: justify;
+    /* Justify text for a neat appearance */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.culture {
+    padding: 20px;
+    /* Space around the content */
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+    color: #333;
+    /* Dark text color for readability */
+    margin: auto;
+    /* Center the section horizontally */
+}
+
+.culture h1 {
+    text-align: center;
+    font-size: 2.5em;
+    /* Larger font size for the main heading */
+    margin-bottom: 15px;
+    /* Space below the main heading */
+    color: #2c3e50;
+    /* Darker color for the main heading */
+}
+
+.culture h2 {
+    font-size: 1.8em;
+    /* Slightly smaller font size for subheadings */
+    margin-top: 20px;
+    /* Space above subheadings */
+    margin-bottom: 10px;
+    /* Space below subheadings */
+    color: #3498db;
+    /* Accent color for subheadings */
+}
+
+.culture p {
+    line-height: 1.6;
+    /* Improved readability with line spacing */
+    margin-bottom: 20px;
+    /* Space below paragraphs */
+    font-family: 'Georgia', serif;
+    /* Elegant serif font */
+    font-size: 1.1em;
+    /* Slightly larger text size */
+}
+
+.culture p:last-of-type {
+    margin-bottom: 0;
+    /* Remove bottom margin for the last paragraph */
+}
+
+.start {
+    padding: 20px;
+    /* Space around the content */
+    background-color: #ffffff;
+    /* White background for a clean look */
+    color: #333333;
+    /* Dark text color for readability */
+    max-width: 800px;
+    /* Limit width for better readability */
+    margin: 50px auto;
+    /* Center the section horizontally */
+    border: 1px solid #ddd;
+    /* Light border for definition */
+    border-radius: 8px;
+    /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+.start:hover .secret {
+    display: block;
+}
+
+.start h1 {
+    font-size: 2.2em;
+    /* Larger font size for the main heading */
+    margin-bottom: 15px;
+    /* Space below the main heading */
+    color: #2c3e50;
+    /* Dark color for emphasis */
+}
+
+.start .secret {
+    color: #3498db;
+    /* Accent color for the "So..." part */
+    font-style: italic;
+    /* Italic style for emphasis */
+}
+
+.start h2 {
+    font-size: 1.6em;
+    /* Font size for subheadings */
+    margin-top: 20px;
+    /* Space above subheadings */
+    margin-bottom: 10px;
+    /* Space below subheadings */
+    color: #2c3e50;
+    /* Dark color for subheadings */
+}
+
+.start ul {
+    list-style-type: disc;
+    /* Bullet points for list items */
+    padding-left: 20px;
+    /* Space between bullets and text */
+}
+
+.start li {
+    margin-bottom: 10px;
+    /* Space between list items */
+    font-size: 1.2em;
+    /* Slightly larger font size for list items */
+}
+
+.start li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.start li a:hover {
+    text-decoration: underline;
+}

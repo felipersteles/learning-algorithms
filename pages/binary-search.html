@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="../public/styles/layout.css">
+    <link rel="stylesheet" type="text/css" href="../public/styles/binary-search.css">
+</head>
+
+<body>
+    <header>
+        <h3>Learning Algorithms <a href="https://github.com/felipersteles" target="_blank" class="teles">by Teles</a>
+        </h3>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section class="apresentation">
+        <h1>Binary Search</h1>
+        <div class="code">
+            <pre>
+                <code>
+        <span class="comment">// Binary search in an int array</span>
+        <span class="keyword">int</span> binary_search(<span class="type">int</span> arr[], <span class="type">int</span> size, <span class="type">int</span> target) {
+            <span class="type">int</span> left = 0;
+            <span class="type">int</span> right = size - 1;
+            
+            <span class="keyword">while</span> (left &lt;= right) {
+                <span class="type">int</span> mid = left + (right - left) / 2;
+                
+                <span class="keyword">if</span> (arr[mid] == target) {
+                    <span class="keyword">return</span> mid;
+                }
+                
+                <span class="comment">// Divide and rule</span>
+                <span class="keyword">if</span> (arr[mid] &lt; target) {
+                    left = mid + 1;
+                }
+                <span class="keyword">else</span> {
+                    right = mid - 1;
+                }
+            }
+            
+            <span class="comment">// Element not found in the array</span>
+            <span class="keyword">return</span> -1; 
+        }
+                </code>
+            </pre>
+        </div>
+        <p>
+            Binary search is a search algorithm that finds the position of a target value within a sorted array. It
+            works by
+            repeatedly dividing the search interval in half, comparing the target value to the middle element of the
+            interval, and then determining which half to search based on whether the target value is less than or
+            greater than
+            the middle element. This process continues until the target value is found or the search interval is empty,
+            indicating that the target value is not present in the array.
+        </p>
+    </section>
+    <section class="explanation">
+        <h1>The Concept</h1>
+
+        <h2>Divide and Rule</h2>
+        <p>
+            The "Divide and Rule" strategy, also known as "Divide and Conquer," is a fundamental algorithmic technique
+            used to solve complex problems by breaking them down into simpler sub-problems. This approach involves
+            dividing the problem into smaller, more manageable parts, solving each part independently, and then
+            combining the solutions to form the final result. In the context of binary search, this method is employed
+            by repeatedly dividing the search interval in half until the target value is found or the interval is empty.
+            This technique is efficient for problems where the solution can be constructed from solutions to smaller
+            instances of the same problem.
+        </p>
+
+        <h2>Complexity</h2>
+        <p>
+            The time complexity of the binary search algorithm is O(log n), where n is the number of elements in the
+            array. This logarithmic complexity arises because each iteration of the binary search halves the search
+            space, significantly reducing the number of comparisons needed to find the target value. As a result, binary
+            search is highly efficient compared to linear search algorithms, especially for large datasets. The space
+            complexity of binary search is O(1) in its iterative form, as it only requires a constant amount of
+            additional memory for variables, regardless of the size of the input array.
+        </p>
+    </section>
+
+    <footer>
+        <p class="copyright">© 2024 <a href="https://github.com/felipersteles">Felipe Teles</a>. All rights reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

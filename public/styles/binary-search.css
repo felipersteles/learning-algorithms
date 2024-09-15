@@ -1,0 +1,112 @@
+.apresentation {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.apresentation h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.apresentation h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.apresentation p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+.explanation {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.explanation h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.explanation h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.explanation p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+.code {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #abb2bf;
+}
+
+.code h1{
+    color: white;
+}
+
+.code pre {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+    white-space: pre-wrap; /* Allows for line breaks */
+    color: #abb2bf; /* Light gray text color */
+}
+
+.code code {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Syntax highlighting */
+.code .keyword {
+    color: #c678dd; /* Purple color for keywords */
+}
+
+.code .type {
+    color: #e5c07b; /* Yellow color for types */
+}
+
+.code .comment {
+    color: #5c6370; /* Gray color for comments */
+}
+
+.code .string {
+    color: #98c379; /* Green color for strings */
+}
+
+.code .function {
+    color: #61afef; /* Blue color for function names */
+}
+
+.code .number {
+    color: #d19a66; /* Orange color for numbers */
+}
