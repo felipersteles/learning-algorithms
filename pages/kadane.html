@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Algorithms - Kadane</title>
+
+    <link rel="stylesheet" type="text/css" href="../public/styles/layout.css">
+    <link rel="stylesheet" type="text/css" href="../public/styles/algorithm.css">
+</head>
+
+<body>
+    <header>
+        <h3>Learning Algorithms <a href="https://github.com/felipersteles" target="_blank" class="teles">by Teles</a>
+        </h3>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="./codes.html">Codes</a></li>
+        </ul>
+    </header>
+    <section class="apresentation">
+        <h1>Kadane</h1>
+        <div class="code">
+            <pre>
+                <code>
+        <span class="keyword">#include &lt;stdio.h&gt;</span>
+        
+        <span class="comment">// Function to find the maximum sum of a contiguous subarray</span>
+        <span class="keyword">int</span> kadane(<span class="type">int</span> arr[], <span class="type">int</span> n) {
+            <span class="comment">// Initialize variables</span>
+            <span class="type">int</span> max_current = arr[0];
+            <span class="type">int</span> max_global = arr[0];
+        
+            <span class="comment">// Iterate through the array</span>
+            <span class="keyword">for</span> (<span class="type">int</span> i = 1; i &lt; n; i++) {
+                <span class="comment">// Update max_current to be the maximum of the current element or</span>
+                <span class="comment">// the current element plus the previous max_current</span>
+                max_current = (arr[i] &gt; max_current + arr[i]) ? arr[i] : max_current + arr[i];
+        
+                <span class="comment">// Update max_global to be the maximum of max_global and max_current</span>
+                <span class="keyword">if</span> (max_current &gt; max_global) {
+                    max_global = max_current;
+                }
+            }
+        
+            <span class="comment">// Return the result</span>
+            <span class="keyword">return</span> max_global;
+        }
+        
+        <span class="keyword">int</span> main() {
+            <span class="comment">// Example array</span>
+            <span class="type">int</span> arr[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+            <span class="type">int</span> n = <span class="keyword">sizeof</span>(arr) / <span class="keyword">sizeof</span>(arr[0]);
+        
+            <span class="comment">// Find the maximum sum subarray</span>
+            <span class="type">int</span> max_sum = kadane(arr, n);
+        
+            <span class="comment">// Print the result</span>
+            <span class="keyword">printf</span>(<span class="string">"Maximum sum of contiguous subarray: %d\n"</span>, max_sum);
+        
+            <span class="keyword">return</span> 0;
+        }
+                </code>
+            </pre>
+        </div>
+
+        <p>
+            Kadane’s Algorithm is a highly efficient method for finding the maximum sum of a contiguous subarray within
+            a one-dimensional array of numbers. It works by iterating through the array and maintaining two values: the
+            maximum sum of the subarray ending at the current position and the overall maximum sum encountered so far.
+            By comparing and updating these values as it processes each element, the algorithm ensures that it captures
+            the largest possible sum of consecutive elements. This approach has a time complexity of O(n), making it
+            ideal for large arrays due to its linear runtime. Kadane’s Algorithm is widely used in various applications,
+            including financial analysis and computational problems involving subarray optimization.
+        </p>
+
+    </section>
+    <section class="explanation">
+        <section class="history">
+            <h1>The History</h1>
+
+            <h2>Situation</h2>
+            <p>
+                Kadane's Algorithm, named after the American computer scientist Joseph Kadane who introduced it in 1984,
+                addresses a classic problem in computer science: finding the maximum sum of a contiguous subarray. The
+                problem gained prominence due to its applicability in various fields, such as finance, where it is used
+                to calculate the maximum profit from a sequence of stock prices, or in signal processing and other
+                optimization tasks. Before Kadane's work, solutions to this problem often involved brute-force methods
+                with a time complexity of O(n^2), which were inefficient for large datasets.
+            </p>
+
+            <h2>Dynamic Programming</h2>
+            <p>
+                Kadane's Algorithm exemplifies the concept of dynamic programming, a powerful paradigm used to solve
+                optimization problems by breaking them down into simpler subproblems. Dynamic programming involves
+                solving each subproblem just once and storing the results to avoid redundant calculations. In the
+                context of Kadane's Algorithm, dynamic programming is employed to maintain two key variables:
+                `max_current`, which represents the maximum sum of the subarray ending at the current position, and
+                `max_global`, which stores the maximum sum encountered so far. By iterating through the array and
+                updating these values, Kadane's Algorithm efficiently finds the solution with a time complexity of O(n),
+                demonstrating the effectiveness of dynamic programming in optimizing complex problems.
+            </p>
+        </section>
+
+    </section>
+
+    <footer>
+        <p class="copyright">© 2024 <a href="https://github.com/felipersteles">Felipe Teles</a>. All rights reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

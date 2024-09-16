@@ -1,7 +1,7 @@
 .apresentation {
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 90vw;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -30,7 +30,7 @@
 .explanation {
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 90vw;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -60,7 +60,7 @@
 .code {
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 90vw;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     color: #abb2bf;

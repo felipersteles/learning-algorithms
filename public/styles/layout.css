@@ -1,7 +1,10 @@
+/* General Styles */
 body {
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
+/* Header Styles */
 header {
     background-color: #3c7489;
     color: white;
@@ -10,7 +13,8 @@ header {
     border-bottom: 1px solid #333;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header h3 {
@@ -23,6 +27,7 @@ header ul {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -49,10 +54,10 @@ header .teles {
 
 header .teles:hover {
     font-size: medium;
-    cursor: pointer;
     color: #ccb77f;
 }
 
+/* Centering Content */
 .center {
     width: 100%;
     display: flex;
@@ -60,6 +65,7 @@ header .teles:hover {
     justify-content: center;
 }
 
+/* References Section */
 .references {
     display: flex;
     flex-direction: column;
@@ -81,7 +87,6 @@ header .teles:hover {
 
 .references ul {
     list-style-type: none;
-    /* Removes default bullet points */
     padding: 0;
     margin: 0;
 }
@@ -93,57 +98,75 @@ header .teles:hover {
 
 .references a {
     color: #007bff;
-    /* Bootstrap blue */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .references a:hover {
     color: #0056b3;
-    /* Darker blue on hover */
     text-decoration: underline;
 }
 
 .references a+a {
     display: block;
-    /* Stack the links */
     margin-top: 5px;
-    /* Space between links */
 }
 
 footer {
     background-color: #3c7489;
-    /* Dark background for contrast */
     color: #ecf0f1;
-    /* Light text color for readability */
     padding: 20px;
-    /* Space around the content */
     text-align: center;
-    /* Center the text */
     position: relative;
-    /* Ensure footer is placed at the bottom */
     bottom: 0;
     width: 100%;
-    /* Full width to cover the viewport */
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow on top */
 }
 
 footer .copyright {
     margin: 0;
-    /* Remove default margin */
     font-size: 0.9em;
-    /* Slightly smaller font size */
 }
 
 footer a {
     color: #ccb77f;
-    /* Bright link color */
     text-decoration: none;
-    /* Remove underline from links */
 }
 
 footer a:hover {
     text-decoration: underline;
-    /* Underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h3 {
+        font-size: 1.5em;
+    }
+
+    header li a {
+        font-size: 1em;
+    }
+
+    .references h1 {
+        font-size: 1.5em;
+    }
+
+    .references li {
+        font-size: 1em;
+    }
 }
